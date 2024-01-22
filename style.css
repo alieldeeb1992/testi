@@ -24,6 +24,26 @@ img {
   gap: 10px;
 }
 
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 701px) and (max-width: 992px) {
+  .container {
+    margin: 100px auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "one two " "three four" "five five";
+    gap: 10px;
+  }
+}
+
 .one {
   background-color: #733fc8;
   grid-area: one;
