@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.container {
+  margin: 100px auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "one one two five" "three four four five";
+  gap: 10px;
+}
+
+.one {
+  background-color: #733fc8;
+  grid-area: one;
+}
+.head {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 20px;
+  color: white;
+  padding: 0 10px;
+}
+.name-grad {
+  margin-left: 10px;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.comment {
+  font-weight: normal;
+  font-size: 17px;
+  margin-top: 20px;
+  color: #ddd;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  margin: 20px 0 20px 20px;
+  align-items: center;
+}
+
+.two {
+  background-color: #49556b;
+  grid-area: two;
+}
+
+.three {
+  background-color: #733fc8;
+  grid-area: three;
+}
+
+.four {
+  background-color: #18202d;
+  grid-area: four;
+}
+
+.five {
+  background-color: #733fc8;
+  grid-area: five;
+}
